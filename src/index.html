@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="post">
+<h1>{{ site.title }}</h1>
+<ol class="timeline">
+	{% for post in site.posts %}
+		<li class="tl-node">
+			<div class="tl-stamp">{{ post.date | date_to_string }}</div>
+			{% if site.linked_posts %}
+				<div class="tl-content"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+			{% else %}
+				<div class="tl-content">{{ post.title }}</div>
+			{% endif %}
+			{% if post.category %}
+				<div class="content">{{ post.content }}</div>
+			{% endif %}
+		</li>
+	{% endfor %}
+</ol>
+</div>

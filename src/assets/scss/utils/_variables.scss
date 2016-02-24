@@ -1,0 +1,33 @@
+/*==============================
+=            Config            =
+==============================*/
+/*----------  Color the world  ----------*/
+/* Using @funciton color($color) */
+$colors: (brand: #50d07d, brand-annex: #d02552, dark: #272727, grey: #cccccc, white: #fafafa, body-type: #444444, head-type: #222, note-text: #666);
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+// Typesetting variables.
+$baseFontSize     : 18px;
+$baseLineHeight   : 1.5;
+$paragraph-width  : 50rem;
+$leading          : $baseLineHeight * 1rem;
+$scale            : 1.414;
+
+$font-size        : 1.25rem;   // lorem
+$line-height      : 1.6;       // lorem
+
+$sans-serif       : 'Open Sans',sans-serif;
+$serif            : 'Source Serif Pro', serif;
+
+/*----------  Grid  ----------*/
+$column-width     : 100px;
+$gutter-width     : 0px;
+$columns          : 12;
+$content-width    : 70rem;
+$post-width       : 50rem;
+$total-width      : 100%;
+
+/*=====  End of Config  ======*/

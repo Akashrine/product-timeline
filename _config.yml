@@ -1,0 +1,28 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+
+url: localhost:3000
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: src
+destination: serve
+
+highlighter: pygments
+permalink: /:title.html
+title: Product Hub
+baseurl: /
+linked_posts: true
+
+# Sets the default folder in Prose.io
+# Sets the default metadata in Prose.io
+prose:
+  rooturl: "_posts"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+
+
+gems: [jekyll-paginate, jekyll-gist]

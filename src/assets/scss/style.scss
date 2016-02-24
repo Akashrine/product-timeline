@@ -1,0 +1,16 @@
+/* 
+The main SCSS file for everything, yep
+*/
+
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "utils/helpers";
+
+@import "base/reset";
+@import "base/typography";
+@import "base/grid";
+@import "utils/syntax";
+
+@import "component/timeline";

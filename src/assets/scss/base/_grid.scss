@@ -1,0 +1,85 @@
+/*========================================
+=            Layout and Grid (kind of)            =
+========================================*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+%container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    position: relative;
+    @include clearfix;
+    @include breakpoint(small) {
+        padding: 5rem 1rem;
+        width: 100%;
+    }
+}
+
+.container {
+    @extend %container;
+    padding: 0 1rem;
+
+    @include breakpoint(small) {
+        max-width: $content-width;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+}
+
+.post {
+    max-width: $post-width;
+    @extend %container;
+}
+
+/*=========================================================================
+=            // Semantic.gs //             =
+=========================================================================*/
+
+
+
+@function gridsystem-width($columns: $columns) {
+    @return $column-width * $columns + $gutter-width * $columns;
+}
+
+
+
+/*==========  Grid part  ==========*/
+
+body {
+    width: 100%;
+    @include clearfix;
+}
+
+@mixin row($columns: $columns) {
+    display: block;
+    width: $total-width * ($gutter-width + gridsystem-width($columns)) / gridsystem-width($columns);
+    max-width: $content-width;
+    margin: 0 $total-width * $gutter-width * 0.5 / gridsystem-width($columns) * -1;
+    @include clearfix;
+}
+
+@mixin column($x, $columns: $columns) {
+    display: inline;
+    float: left;
+    width: $total-width * (($gutter-width + $column-width) * $x - $gutter-width) / gridsystem-width($columns);
+    margin: 0 $total-width * $gutter-width * 0.5 / gridsystem-width($columns);
+}
+
+@mixin push($offset: 1) {
+    margin-left: $total-width * ($gutter-width + $column-width) * $offset / gridsystem-width($columns) + $total-width * $gutter-width * 0.5 / gridsystem-width($columns);
+}
+
+@mixin pull($offset: 1) {
+    margin-right: $total-width * ($gutter-width + $column-width) * $offset / gridsystem-width($columns) + $total-width * $gutter-width * 0.5 / gridsystem-width($columns);
+}
+
+
+/*=====  End of Layout and Grid (kind of)  ======*/

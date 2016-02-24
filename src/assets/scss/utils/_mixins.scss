@@ -1,0 +1,59 @@
+/*==============================
+=            Mixins            =
+==============================*/
+
+/**
+*
+* Mixin for breakpoints
+*
+**/
+/**
+ * Mixin handling breakpoints for media queries / Mobile First
+ */
+@mixin breakpoint($point) {
+    @if $point == large {
+        @media (min-width: 48em) {
+            @content;
+        }
+        //960px
+    }
+    @if $point == medium {
+        @media (min-width: 38em) {
+            @content;
+        }
+        //760px
+    }
+    @if $point == small {
+        @media (min-width: 28em){
+            @content;
+        }
+    }
+}
+
+/**
+*
+* Clearfix
+*
+**/
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin aligner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin contentAlign() {
+    display: flex;
+    justify-content: center;
+}

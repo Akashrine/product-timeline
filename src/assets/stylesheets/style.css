@@ -1,0 +1,886 @@
+/* 
+The main SCSS file for everything, yep
+*/
+/*==============================
+=            Config            =
+==============================*/
+/*----------  Color the world  ----------*/
+/* Using @funciton color($color) */
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+/*----------  Grid  ----------*/
+/*=====  End of Config  ======*/
+/*=================================
+=            Functions            =
+=================================*/
+/**
+*
+* Colours | Avoid the use of map-get
+*
+**/
+/*=====  End of Functions  ======*/
+/*==============================
+=            Mixins            =
+==============================*/
+/**
+*
+* Mixin for breakpoints
+*
+**/
+/**
+ * Mixin handling breakpoints for media queries / Mobile First
+ */
+/**
+*
+* Clearfix
+*
+**/
+/*====================================
+=            Placeholders            =
+====================================*/
+/*----------  Typo  ----------*/
+/*=====  End of Placeholders  ======*/
+/*===============================
+=            Helpers            =
+===============================*/
+.grey {
+  color: #666;
+  margin-top: 2rem; }
+
+.spaced {
+  letter-spacing: 0.2rem; }
+
+.stroked {
+  font-weight: normal;
+  font-size: 0.75rem; }
+
+.stroked:after {
+  content: "";
+  width: 1rem;
+  height: 0.2rem;
+  position: absolute;
+  background: #666;
+  top: 3.55rem;
+  margin-left: 1rem; }
+
+.upper {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
+
+/*==============================
+=            Reset             =
+==============================*/
+/**
+ *
+ * Based on normalize and normalize-opentype
+ *
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button, input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/*! normalize-opentype.css v0.2.4 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+ * 1. Inherit style issues with custom selections, per robsterlini.co.uk/journal/opentype-and-selection-dont-mix
+ * 2. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+ *    Turn off all other ligatures, tabular, lining numerals, and alternates
+      Uses same settings for tables
+ */
+::-moz-selection {
+  color: inherit;
+  /* 1. */
+  text-shadow: inherit;
+  /* 2. */
+  background-color: #ACCEF7;
+  /* 3. */ }
+::selection {
+  color: inherit;
+  /* 1. */
+  text-shadow: inherit;
+  /* 2. */
+  background-color: #ACCEF7;
+  /* 3. */ }
+
+html,
+body,
+table {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */ }
+
+/* Headings
+========================================================================== */
+/**
+ * 1. Turn on discretionary ligatures for larger headings
+ */
+h1,
+h2,
+h3 {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */ }
+
+/* Text-level semantics
+========================================================================== */
+/**
+ * 1. Change all letters to uppercase
+ * 2. Turn on small caps for upper and lowercase letters
+ */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */ }
+
+/*
+ * TODO: Turn on diagonal fractions where appropriate
+ */
+time {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0; }
+
+/*
+ * 1. Turn off kerning and ligatures,
+ *    Turn on lining, tabular numerals, slashed zero
+ */
+pre,
+kbd,
+samp,
+code {
+  -webkit-font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+          font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */ }
+
+/**
+ * 1. Turn on proper supercript numerals
+ */
+sup {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */ }
+
+/**
+ * 1. Turn on proper subscript numerals
+ */
+sub {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */ }
+
+/* Grouping content
+========================================================================== */
+/**
+ * TODO: Adds proper bullets
+ */
+/*
+ * TODO:
+ * 1. Adds counters for lists
+ * 2. Use proper numerals for lists
+ */
+/**
+ * Adds proper small caps
+ */
+/**
+ * TODO: scmp, sc2c, pnum, case sensitive forms for postal codes
+ */
+/* Forms
+========================================================================== */
+/**
+ * 1. Turns on lining, proportional numerals without clarified zeroes
+ * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+ */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+  -webkit-font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+          font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  /* 1. */ }
+
+/* Tables
+========================================================================== */
+/**
+ * 1. Turns on tabular, lining numerals and slashed zero
+ */
+tbody,
+caption {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */ }
+
+/*=====  End of Reset   ======*/
+/*! Typebase.scss v0.1.0 | MIT License */
+/* Setup */
+html {
+  font-size: 18px;
+  line-height: 1.75; }
+
+body {
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  margin: 0 auto 0.25em auto;
+  font-weight: normal;
+  font-family: "Source Serif Pro", serif; }
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -.05rem; }
+
+h5, h6 {
+  font-weight: 400;
+  font-style: italic; }
+
+h1 {
+  font-size: 1.8rem; }
+  @media (min-width: 38em) {
+    h1 {
+      font-size: 2.1rem; } }
+  h1.post-title {
+    font-size: 2.8rem; }
+    @media (min-width: 38em) {
+      h1.post-title {
+        font-size: 3.5rem; } }
+
+h2, .h2 {
+  font-size: 1.45rem; }
+  @media (min-width: 38em) {
+    h2, .h2 {
+      font-size: 1.67rem; } }
+
+h3, .h3 {
+  font-size: 1.18rem; }
+  @media (min-width: 38em) {
+    h3, .h3 {
+      font-size: 1.33rem; } }
+
+h4, .h4 {
+  font-size: 1rem;
+  font-variant: small-caps; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.85rem; }
+
+p {
+  margin: 0 0 1rem; }
+
+a {
+  color: #50d07d; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  text-decoration: none; }
+
+p a, li a {
+  color: #666;
+  border-bottom: solid 0.125rem #50d07d;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.35rem; }
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-bottom: .5rem; }
+
+ul {
+  list-style: inside circle;
+  padding-left: 0; }
+  ul li {
+    margin-bottom: .25rem; }
+  ul ul,
+  ul ol {
+    margin-top: .25rem;
+    margin-bottom: .5rem; }
+
+ol {
+  list-style: inside decimal;
+  padding-left: 0; }
+  ol li {
+    margin-bottom: .25rem; }
+  ol ul,
+  ol ol {
+    margin-top: .25rem;
+    margin-bottom: .5rem; }
+
+p + h1,
+p + h2,
+p + h3,
+ul + h1,
+ul + h2,
+ul + h3,
+ol + h1,
+ol + h2,
+ol + h3 {
+  margin-top: 1.5rem; }
+
+hr {
+  border: 0;
+  border-top: .5px solid #eee;
+  border-bottom: .5px solid #eee;
+  margin: 1.5rem auto; }
+  hr.awesome {
+    position: relative;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    height: 30px;
+    overflow: hidden; }
+    hr.awesome:after {
+      content: "";
+      position: absolute;
+      left: 2%;
+      top: 0;
+      width: 96%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 2px 30px rgba(0, 0, 0, 0.9); }
+
+blockquote {
+  padding: 0 0 0 1.5rem;
+  margin: 0 2rem 1rem 0;
+  color: #666;
+  border-left: 0.5rem solid #666;
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+  font-weight: 300; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #d02552;
+  background-color: #fafafa;
+  border-radius: 3px; }
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  background-color: #f9f9f9; }
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent; }
+
+[role="note"] {
+  color: #666;
+  font-size: 0.75rem;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em; }
+  @media screen and (max-width: 48rem) {
+    [role="note"] {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      max-width: 37.5rem;
+      margin: 1em auto; } }
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse; }
+
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5; }
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+/*----------  particularity  ----------*/
+.lead {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif; }
+  .lead:after {
+    content: '';
+    display: block;
+    margin: 20px 0;
+    width: 70px;
+    height: 6px;
+    background-color: #272727; }
+
+/*========================================
+=            Layout and Grid (kind of)            =
+========================================*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container, .post {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  position: relative;
+  *zoom: 1; }
+  .container:before, .post:before, .container:after, .post:after {
+    content: "";
+    display: table; }
+  .container:after, .post:after {
+    clear: both; }
+  @media (min-width: 28em) {
+    .container, .post {
+      padding: 5rem 1rem;
+      width: 100%; } }
+
+.container {
+  padding: 0 1rem; }
+  @media (min-width: 28em) {
+    .container {
+      max-width: 70rem;
+      margin: 0 auto;
+      padding: 1rem 2rem; } }
+
+.post {
+  max-width: 50rem; }
+
+/*=========================================================================
+=            // Semantic.gs //             =
+=========================================================================*/
+/*==========  Grid part  ==========*/
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+/*=====  End of Layout and Grid (kind of)  ======*/
+.hll {
+  background-color: #ffffcc; }
+
+.c {
+  color: #999; }
+
+.err {
+  color: #AA0000;
+  background-color: #FFAAAA; }
+
+.k {
+  color: #006699; }
+
+.o {
+  color: #555555; }
+
+.cm {
+  color: #0099FF;
+  font-style: italic; }
+
+.cp {
+  color: #009999; }
+
+.c1 {
+  color: #999; }
+
+.cs {
+  color: #999; }
+
+.gd {
+  background-color: #FFCCCC;
+  border: 1px solid #CC0000; }
+
+.ge {
+  font-style: italic; }
+
+.gr {
+  color: #FF0000; }
+
+.gh {
+  color: #003300; }
+
+.gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00CC00; }
+
+.go {
+  color: #AAAAAA; }
+
+.gp {
+  color: #000099; }
+
+.gu {
+  color: #003300; }
+
+.gt {
+  color: #99CC66; }
+
+.kc {
+  color: #006699; }
+
+.kd {
+  color: #006699; }
+
+.kn {
+  color: #006699; }
+
+.kp {
+  color: #006699; }
+
+.kr {
+  color: #006699; }
+
+.kt {
+  color: #007788; }
+
+.m {
+  color: #FF6600; }
+
+.s {
+  color: #d44950; }
+
+.na {
+  color: #4f9fcf; }
+
+.nb {
+  color: #336666; }
+
+.nc {
+  color: #00AA88; }
+
+.no {
+  color: #336600; }
+
+.nd {
+  color: #9999FF; }
+
+.ni {
+  color: #999999; }
+
+.ne {
+  color: #CC0000; }
+
+.nf {
+  color: #CC00FF; }
+
+.nl {
+  color: #9999FF; }
+
+.nn {
+  color: #00CCFF; }
+
+.nt {
+  color: #2f6f9f; }
+
+.nv {
+  color: #003333; }
+
+.ow {
+  color: #000000; }
+
+.w {
+  color: #bbbbbb; }
+
+.mf {
+  color: #FF6600; }
+
+.mh {
+  color: #FF6600; }
+
+.mi {
+  color: #FF6600; }
+
+.mo {
+  color: #FF6600; }
+
+.sb {
+  color: #CC3300; }
+
+.sc {
+  color: #CC3300; }
+
+.sd {
+  color: #CC3300;
+  font-style: italic; }
+
+.s2 {
+  color: #CC3300; }
+
+.se {
+  color: #CC3300; }
+
+.sh {
+  color: #CC3300; }
+
+.si {
+  color: #AA0000; }
+
+.sx {
+  color: #CC3300; }
+
+.sr {
+  color: #33AAAA; }
+
+.s1 {
+  color: #CC3300; }
+
+.ss {
+  color: #FFCC33; }
+
+.bp {
+  color: #336666; }
+
+.vc {
+  color: #003333; }
+
+.vg {
+  color: #003333; }
+
+.vi {
+  color: #003333; }
+
+.il {
+  color: #FF6600; }
+
+.css .o,
+.css .o + .nt,
+.css .nt + .nt {
+  color: #999; }
+
+/************Timeline**************/
+/* Timeline Container */
+.timeline {
+  border-left: 5px solid #dddddd;
+  padding-bottom: 3em;
+  position: relative; }
+  .timeline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1.47em;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #dddddd;
+    border: 5px solid #dddddd; }
+
+/* Individual Timeline Item */
+.tl-node {
+  padding-left: 1em;
+  margin-bottom: 3em;
+  position: relative; }
+  .tl-node a {
+    display: block; }
+  .tl-node:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.95em;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 5px solid #dddddd; }
+
+.tl-content a {
+  color: #222222; }
+
+/* Timestamp */
+.tl-stamp {
+  font-size: 0.7em;
+  color: gray; }
+
+/************End Timeline**************/
