@@ -1,3 +1,4 @@
-# julien-brionne
+# Product Timeline
 
-[Describe the project.]
+Follow every step of the creation of you Product. 
+Made in Scss, Jekyll and boost with gulp
