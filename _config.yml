@@ -10,7 +10,7 @@ destination: serve
 highlighter: pygments
 permalink: /:title.html
 title: Product Hub
-baseurl: /
+baseurl: http://localhost:3000
 linked_posts: true
 
 # Sets the default folder in Prose.io

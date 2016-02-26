@@ -30,7 +30,7 @@ Accessible depuis votre ordinateur pour la gestion du commerce, vous pourrez con
 ### Be smart
 
 - Définissez votre prev de ventes
-- Définissez vos kpis 
+- Choisissez vos kpis (ou laissez vous guider) 
 - Laisser la machine analyser vos historiques
 - Levées d’alertes automatisées
 - Merch automatique

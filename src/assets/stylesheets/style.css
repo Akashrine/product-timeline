@@ -450,8 +450,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 
 p a, li a {
   color: #666;
-  border-bottom: solid 0.125rem #50d07d;
-  display: inline-block;
   text-decoration: none;
   line-height: 1.35rem; }
 
@@ -845,12 +843,13 @@ body {
 .timeline {
   border-left: 5px solid #dddddd;
   padding-bottom: 3em;
-  position: relative; }
+  position: relative;
+  list-style: none; }
   .timeline:before {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -1.47em;
+    left: -1.3em;
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -868,7 +867,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -0.95em;
+    left: -0.7em;
     width: 20px;
     height: 20px;
     border-radius: 20px;
