@@ -4,11 +4,12 @@ title: Brainstorm CMS atelier #1
 ---
 
 # Brainstorm CMS atelier #1
-## Points d’améliorations : 
+
+## Points d’améliorations
 * Mosaïque :
-    - Mal adapté aux devices
-    - Trop instable
-    - Perte de qualité d’image
+  * Mal adapté aux devices
+  * Trop instable
+  * Perte de qualité d’image
 * Slider (possibilité de + de spider)
 * Administration 404 et pages CMS
 * Gestion des images des pages CMS
