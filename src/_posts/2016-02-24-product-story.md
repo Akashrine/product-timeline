@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Product Story
+title: Product Story V1
 ---
-## Product Story 
+## Product Story V1
 
 La plateforme vous accompagne sur votre gestion quotidienne de votre business quel que soit le canal ciblé. Que vous suiviez vos indicateurs clés, ou que vous vouliez impacter une promotions sur la totalité de votre commerce, la plateforme vous permet de gérer la globalité de vos actions. 
 
