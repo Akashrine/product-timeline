@@ -6,7 +6,6 @@
 $colors: (brand: #50d07d, brand-annex: #d02552, dark: #272727, grey: #cccccc, white: #fafafa, body-type: #444444, head-type: #222, note-text: #666);
 
 // Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 // Typesetting variables.
@@ -20,7 +19,7 @@ $font-size        : 1.25rem;   // lorem
 $line-height      : 1.6;       // lorem
 
 $sans-serif       : 'Open Sans',sans-serif;
-$serif            : 'Source Serif Pro', serif;
+$serif            : 'Open Sans', serif;
 
 /*----------  Grid  ----------*/
 $column-width     : 100px;

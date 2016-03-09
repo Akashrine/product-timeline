@@ -1,0 +1,45 @@
+---
+layout: post
+title: Atelier besoins fonctionnels et confort opérationnel E-Store #1
+---
+- Gérer ses images (Pages CMS, produits)
+- Catalogues (Attributs, Xsell, Upsell …)
+- Gestion internationale (gestion langue / zone)
+- Migration preprod / prod auto ( ou mode preview)
+- Mosaïque à revoir
+- Réindex
+- MEP Auto (Gestion menus) 
+- Recrop / resize auto → Blocks statics
+- Regles de prix venant des flux
+- Merch conditionnés (auto)
+- Prévisu devices
+- Prévisu gd emplacements
+- Encarts statics facilité
+- Gestion cadeaux CKO
+- Commande test
+- NL
+- Alerting / monitoring erreur site
+- Gestion des blogs
+- gestion CMS
+- Consultation et manipulation segmentation clients
+- CRM (date de naissance, segments …)
+- Extract
+  - Catalog
+  - Img stock
+  - CA
+  - clients
+- Gestion abonnement
+- Multi Wishlist
+- goodies offert
+- Avis Clients
+- One click payment
+- Tx D’écoulement / tx de rupture
+- Pages Cat Enrichies
+- Cartes Cadeaux
+- Complétudes infos produits
+- Export Analytics par catégories familles brand
+- Gestion catalogue par canal
+- Données Socloz
+- Données Third party
+- Harmonisation des rendus
+- Gestion des métas
