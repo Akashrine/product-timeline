@@ -38,6 +38,7 @@ title: Brainstorm besoins fonctionnels CRM
 * Mails transacs (customs)
 * Trigger (welcome client, welcome prospect)
 * Extraction de données (BI)
+    - Export Optin / Nouveaux Inscrits
 * Création de ciblage (ISO IDContact)
 
 ### LEGAL :
@@ -48,5 +49,10 @@ title: Brainstorm besoins fonctionnels CRM
 ### Autres
 * Dashboard (Automatisation de l'extract)
 * Croisé le BI business et le CRM
+* AB Testing
+* SMS
+* Courier (Zapa)
+    - Création ciblage puis DA puis on envoit le zip à la poste
+* Dossier Test pour rooter les mails
 
 

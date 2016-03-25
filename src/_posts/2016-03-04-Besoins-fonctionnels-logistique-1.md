@@ -50,3 +50,11 @@ title: Brainstorm besoins fonctionnels Logistique
 * Priorisation de l'implantation partielles
 * Destockage
 * Retour de collection
+* Suivis des mouvements de chaque article
+    - Rechercher une ref dans tous les AR X Marques
+    - Historique d'une ref (Mvt de ref sur une plus grand période)
+    - Suivis perso
+    - Suivis mise en defectueux
+    - (traçabilité pdt/lot)
+* Demandes de retours en cours (pas uniquement celles remboursées)
+* Aging des produits 

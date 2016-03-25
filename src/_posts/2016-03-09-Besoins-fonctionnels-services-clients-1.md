@@ -16,7 +16,7 @@ title: Atelier besoins fonctionnels Services Clients #1
 - Data à croiser (clients, commandes, produits)
 - Raisons d’appel non relié à un client
 - Retours clients à automatiser
-- Erreurs XDock (Mail auto pour retour) 
+- Erreurs XDock (Mail auto pour retour)
 - Date de récupération du colis retour
 - code barre sur retour
 - Retours clients :
@@ -24,8 +24,8 @@ title: Atelier besoins fonctionnels Services Clients #1
   - Remboursement = mail auto
   - Remboursement auto
   - Calcul délai de retours basé sur mapping des données transporteurs (date de livraison et non date d’envoi)
-- Aller clients : 
+- Aller clients :
   - Mapping transporteur (suivis cpte client + BO service client)
   - Expeditions partielles → Automatisation remboursement
-  - Cmd rejetée (cas 0 stock) → Automatisation (Alerting …) 
+  - Cmd rejetée (cas 0 stock) → Automatisation (Alerting …)
 
